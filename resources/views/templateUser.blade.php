@@ -22,12 +22,10 @@
                     <a class="nav-link" href="#"></a>
                 </li>
             </ul>
-            <form class="form-inline">
-                <input class="form-control mr-2" type="text" placeholder="Identifiant" aria-label="Search">
-                <input class="form-control mr-2" type="password"  aria-label="Search">
-                <button class="btn btn-outline-success my-2" type="submit">Connection</button>
-            </form>
         </nav>
+    </div>
+    <div id="nav">
+        @yield('navcontent')
     </div>
     <div id="contenu" style="margin: 15px">
         @yield('contenu')

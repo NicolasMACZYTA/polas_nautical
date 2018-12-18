@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('accueil');
 });
+Route::get('/admin', function() {
+    return view('admin');
+});
+Route::get('/user', function() {
+    return view('user');
+});
+
