@@ -2,26 +2,20 @@
 
 
 @section('navcontent')
-<div id="nav">
-        <ul class="nav flex-column float-left">
+<ul class="nav flex-column float-left">
             <li class="nav-item">
-                <a class="nav-link" href="admin/places">emplacements</a>
+                <a class="nav-link" href="#">User</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ports</a>
+                <a class="nav-link" href="#">truc</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">utilisateurs</a>
+                <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">reservations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">demandes</a>
+                <a class="nav-link" href="#">Disabled</a>
             </li>
         </ul>
-    </div>
-
 @endsection
 
 @section('contenu')

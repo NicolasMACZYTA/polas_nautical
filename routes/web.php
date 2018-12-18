@@ -17,7 +17,15 @@ Route::get('/', function () {
 Route::get('/admin', function() {
     return view('admin');
 });
-Route::get('/user', function() {
-    return view('user');
+Route::get('/adminPlaces',function(){
+    return view('adminPlaces');
 });
+
+Route::get('/proprietaire', function() {
+    return view('proprietaire');
+});
+Route::get('/gestionnaire', function() {
+    return view('gestionnaire');
+});
+
 
