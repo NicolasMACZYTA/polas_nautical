@@ -4,16 +4,16 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Bateaux extends Migration
+class CreateBateauxTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up ()
+    public function up()
     {
-        Schema::create('bateaux', function(Blueprint $table){
+        Schema::create('bateaux', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('nom' ,25);
@@ -22,11 +22,19 @@ class Bateaux extends Migration
             $table->decimal('largeur' ,4 ,2);
             $table->date('date_construction');
         });
-
+        Schema::table('bateaux', function(Blueprint $table){
+            $table->integer('id_proprietaire')->unsigned();
+            $table->foreign('id_proprietaire')->references('id')->on('utilisateur');
+        });
     }
-    public function down ()
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
     {
         Schema::dropIfExists('bateaux');
-
     }
 }
