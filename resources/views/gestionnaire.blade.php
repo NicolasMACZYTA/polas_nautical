@@ -4,16 +4,13 @@
 @section('navcontent')
 <ul class="nav flex-column float-left">
             <li class="nav-item">
-                <a class="nav-link" href="#">User</a>
+                <a class="nav-link" href="#">Places</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">truc</a>
+                <a class="nav-link" href="#">Réservations</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#">Demandes</a>
             </li>
         </ul>
 @endsection

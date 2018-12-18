@@ -4,16 +4,10 @@
 @section('navcontent')
 <ul class="nav flex-column float-left">
             <li class="nav-item">
-                <a class="nav-link" href="#">User</a>
+                <a class="nav-link" href="#">Bateaux</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">truc</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#">Ports</a>
             </li>
         </ul>
 @endsection
