@@ -1,4 +1,5 @@
-@extends('templateUser')
+@extends('template')
+
 
 @section('navcontent')
 <ul class="nav flex-column float-left">

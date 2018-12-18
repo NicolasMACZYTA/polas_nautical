@@ -1,7 +1,9 @@
-@extends('templateUser')
+@extends('template')
+
 
 @section('navcontent')
-<ul class="nav flex-column float-left">
+<div id="nav">
+        <ul class="nav flex-column float-left">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Admin</a>
             </li>
@@ -15,6 +17,8 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
         </ul>
+    </div>
+
 @endsection
 
 @section('contenu')
