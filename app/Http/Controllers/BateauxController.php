@@ -47,7 +47,7 @@ class BateauxController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**

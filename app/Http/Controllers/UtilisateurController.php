@@ -31,21 +31,25 @@ class UtilisateurController extends Controller
     /**
      * Affiche un formulaire de connexion
      */
-    public function connexion(){
-        if(isset($_SESSION)){
-            return view('utilisateur.connexion');
-        }
-        else{
-            return view('utilisateur.afficher');
-        }
-
+    public function deconnexion(){
+        unset($_SESSION['Utilisateur']);
+        return redirect('/');
     }
 
     /*
      * Vérifie les infos
      */
-    public function verification(){
-        return view('accueil');
+    public function verification(Request $request){
+        $utilisateur = Utilisateur::where('login', $request->login)->where('mot_de_passe', $request->mot_de_passe)->first();
+
+        if ( !$utilisateur == null)
+        {
+            $_SESSION['Utilisateur'] = $utilisateur;
+            return redirect('/');
+        }
+        else{
+            return redirect('/');
+        }
     }
 
     public function store(Request $request)

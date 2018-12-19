@@ -28,6 +28,10 @@ Route::get('/gestionnaire', function() {
     return view('gestionnaire');
 });
 
+Route::get('/utilisateur/deconnexion', 'UtilisateurController@deconnexion');
+
+ROUTE::get('/utilisateur/connexion','UtilisateurController@verification');
+
 Route::get('/utilisateur/creer', 'UtilisateurController@create');
 
 ROUTE::resource('bateaux','BateauxController');

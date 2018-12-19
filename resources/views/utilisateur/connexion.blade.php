@@ -1,5 +1,5 @@
 <div style="float:right">
-    <form method="POST" class="form-inline" action="http://localhost/utilisateur/create" accept-charset="UTF-8">
+    <form method="GET" class="form-inline" action="http://localhost/utilisateur/connexion" accept-charset="UTF-8">
         <div class ="form-group" style="margin-left:15px">
             {{Form::label ('login','Nom d\'utilisateur : ',
             ['class'=>'control-label'])
