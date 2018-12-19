@@ -28,6 +28,8 @@ Route::get('/gestionnaire', function() {
     return view('gestionnaire');
 });
 
+Route::get('/utilisateur/creer', 'UtilisateurController@create');
+
 ROUTE::resource('bateaux','BateauxController');
 
 ROUTE::resource('utilisateur','UtilisateurController');
@@ -35,3 +37,5 @@ ROUTE::resource('utilisateur','UtilisateurController');
 ROUTE::resource('emplacement','EmplacementController');
 
 ROUTE::resource('port','PortController');
+
+

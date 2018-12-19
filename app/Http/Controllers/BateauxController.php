@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Bateaux;
 
 class BateauxController extends Controller
 {
@@ -24,7 +25,7 @@ class BateauxController extends Controller
      */
     public function create()
     {
-        return view('boats.create');
+        return view('creation.bateaux');
     }
 
     /**

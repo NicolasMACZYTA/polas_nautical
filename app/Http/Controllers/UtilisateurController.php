@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Utilisateur;
 
 class UtilisateurController extends Controller
 {
@@ -24,18 +25,16 @@ class UtilisateurController extends Controller
      */
     public function create()
     {
-        //
+        return view('utilisateur.creation');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $utilisateur = Utilisateur::create(
+            $request->input()
+        );
+        flash('Nouveau utilisateur enregistré')->success();
+        return redirect()->route('/' ,['utilisateur'=>$utilisateur]);
     }
 
     /**
