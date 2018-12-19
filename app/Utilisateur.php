@@ -12,6 +12,8 @@ class Utilisateur extends Model
         'login',
         'mot_de_passe',
         'nom',
-        'prenom'
+        'prenom',
+        'id_droit'
     ];
+
 }

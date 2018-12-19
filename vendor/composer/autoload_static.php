@@ -31,6 +31,8 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
+        'e23faeee409e941dc9b4c80386209c39' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/functions.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -148,6 +150,7 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         'C' => 
         array (
             'Cron\\' => 5,
+            'Collective\\Html\\' => 16,
         ),
         'B' => 
         array (
@@ -384,6 +387,10 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'Collective\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
+        ),
         'BeyondCode\\DumpServer\\' => 
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src',
@@ -421,6 +428,13 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'L' => 
+        array (
+            'Laracasts\\Flash' => 
+            array (
+                0 => __DIR__ . '/..' . '/laracasts/flash/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Lexer\\' => 
@@ -431,14 +445,21 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
     );
 
     public static $classMap = array (
+        'App\\Bateaux' => __DIR__ . '/../..' . '/app/Bateaux.php',
+        'App\\Boat' => __DIR__ . '/../..' . '/app/Boat.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Emplacement' => __DIR__ . '/../..' . '/app/Emplacement.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\BateauxController' => __DIR__ . '/../..' . '/app/Http/Controllers/BateauxController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\EmplacementController' => __DIR__ . '/../..' . '/app/Http/Controllers/EmplacementController.php',
+        'App\\Http\\Controllers\\PortController' => __DIR__ . '/../..' . '/app/Http/Controllers/PortController.php',
+        'App\\Http\\Controllers\\UtilisateurController' => __DIR__ . '/../..' . '/app/Http/Controllers/UtilisateurController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -447,12 +468,14 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Port' => __DIR__ . '/../..' . '/app/Port.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\Utilisateur' => __DIR__ . '/../..' . '/app/Utilisateur.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
         'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',
         'Barryvdh\\Debugbar\\Controllers\\BaseController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/BaseController.php',
@@ -488,6 +511,7 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         'Barryvdh\\Debugbar\\Twig\\Extension\\Stopwatch' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/Extension/Stopwatch.php',
         'Barryvdh\\Debugbar\\Twig\\Node\\StopwatchNode' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/Node/StopwatchNode.php',
         'Barryvdh\\Debugbar\\Twig\\TokenParser\\StopwatchTokenParser' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Twig/TokenParser/StopwatchTokenParser.php',
+        'BateauxTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BateauxTableSeeder.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
@@ -498,6 +522,13 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'Collective\\Html\\Componentable' => __DIR__ . '/..' . '/laravelcollective/html/src/Componentable.php',
+        'Collective\\Html\\Eloquent\\FormAccessible' => __DIR__ . '/..' . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
+        'Collective\\Html\\FormBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/FormBuilder.php',
+        'Collective\\Html\\FormFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/FormFacade.php',
+        'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
+        'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
+        'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -596,6 +627,7 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         'Dotenv\\Exception\\ValidationException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ValidationException.php',
         'Dotenv\\Loader' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Loader.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
+        'DroitTableSeeder' => __DIR__ . '/../..' . '/database/seeds/DroitTableSeeder.php',
         'Egulias\\EmailValidator\\EmailLexer' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailLexer.php',
         'Egulias\\EmailValidator\\EmailParser' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailParser.php',
         'Egulias\\EmailValidator\\EmailValidator' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailValidator.php',
@@ -2068,6 +2100,13 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Laracasts\\Flash\\Flash' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/Flash.php',
+        'Laracasts\\Flash\\FlashNotifier' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/FlashNotifier.php',
+        'Laracasts\\Flash\\FlashServiceProvider' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/FlashServiceProvider.php',
+        'Laracasts\\Flash\\LaravelSessionStore' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/LaravelSessionStore.php',
+        'Laracasts\\Flash\\Message' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/Message.php',
+        'Laracasts\\Flash\\OverlayMessage' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/OverlayMessage.php',
+        'Laracasts\\Flash\\SessionStore' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/SessionStore.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -4137,6 +4176,7 @@ class ComposerStaticInit26b42d8fe10d8d6e36196f04e696b853
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'UtilisateurTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UtilisateurTableSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',

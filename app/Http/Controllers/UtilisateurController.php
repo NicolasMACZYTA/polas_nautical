@@ -15,7 +15,7 @@ class UtilisateurController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -31,6 +31,7 @@ class UtilisateurController extends Controller
     public function store(Request $request)
     {
         $utilisateur = Utilisateur::create(
+            $request->id_droit()->associate(1),
             $request->input()
         );
         flash('Nouveau utilisateur enregistré')->success();
