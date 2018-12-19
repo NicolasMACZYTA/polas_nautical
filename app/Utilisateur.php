@@ -16,4 +16,9 @@ class Utilisateur extends Model
         'id_droit'
     ];
 
+    protected $attributes = [
+        'id_droit'=>'1'
+    ];
+
+
 }

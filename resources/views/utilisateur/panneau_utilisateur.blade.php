@@ -2,8 +2,8 @@
 
 
 @section('navcontent')
-<ul class="nav flex-column float-left">
-            <li class="nav-item">
+<ul class="nav flex-column float-left" style="width:150px">
+            <li class="nav-item" >
                 <a class="nav-link" href="#">User</a>
             </li>
             <li class="nav-item">
@@ -29,5 +29,7 @@
         </div>
     </div>
 
-
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
 @endsection

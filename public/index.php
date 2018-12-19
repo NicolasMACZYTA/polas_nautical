@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+$_SESSION['Test']="Session ouverte";
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

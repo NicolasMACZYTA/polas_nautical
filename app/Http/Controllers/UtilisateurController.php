@@ -15,7 +15,7 @@ class UtilisateurController extends Controller
      */
     public function index()
     {
-
+        return('utilisateur.liste');
     }
 
     /**
@@ -28,14 +28,33 @@ class UtilisateurController extends Controller
         return view('utilisateur.creation');
     }
 
+    /**
+     * Affiche un formulaire de connexion
+     */
+    public function connexion(){
+        if(isset($_SESSION)){
+            return view('utilisateur.connexion');
+        }
+        else{
+            return view('utilisateur.afficher');
+        }
+
+    }
+
+    /*
+     * Vérifie les infos
+     */
+    public function verification(){
+        return view('accueil');
+    }
+
     public function store(Request $request)
     {
         $utilisateur = Utilisateur::create(
-            $request->id_droit()->associate(1),
             $request->input()
         );
         flash('Nouveau utilisateur enregistré')->success();
-        return redirect()->route('/' ,['utilisateur'=>$utilisateur]);
+        return redirect()->route('utilisateur.show',['utilisateur'=>$utilisateur]);
     }
 
     /**
@@ -46,7 +65,7 @@ class UtilisateurController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('utilisateur.panneau_utilisateur');
     }
 
     /**

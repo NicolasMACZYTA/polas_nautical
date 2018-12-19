@@ -1,4 +1,9 @@
+<?php
+    use App\Http\Controllers\UtilisateurController;
+?>
+
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
     @yield('meta')
@@ -11,6 +16,7 @@
         <div id="bandeau" style="background-color:#6fadff;height:100px;width:100%">
             <img src="../resources/images/logo.png" style="height:100px">
         </div>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -23,7 +29,12 @@
                     <a class="nav-link" href="#"></a>
                 </li>
             </ul>
-            @yield('connexionform')
+            @isset($_SESSION['Utilisateur'])
+                @include('utilisateur.afficher')
+            @endisset
+            @empty($_SESSION['Utilisateur'])
+                @include('utilisateur.connexion')
+            @endempty
         </nav>
     </div>
         @yield('navcontent')
