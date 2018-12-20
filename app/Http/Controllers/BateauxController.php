@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Utilisateur;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use App\Bateaux;
 
 class BateauxController extends Controller
@@ -13,9 +15,22 @@ class BateauxController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public static function index()
     {
-        //
+        $resultat = DB::table('bateaux')->where('id_proprietaire',$_SESSION['Utilisateur']['id'])->get();
+        $resultat = $resultat->toArray();
+        if(empty($resultat)){
+            echo "<div class=\"alert alert-danger\" role=\"alert\">
+        <strong>Vous ne possedez aucun bateau !</strong><br>
+        - Vous pouvez ajouter un de vos bateau dans le menu de gauche.
+        </div>";
+        }
+        foreach($resultat as $i){
+            $bateau = json_decode(json_encode($i), true);
+            echo view('bateau.affichage', [
+                'bateau' => $bateau
+            ]);
+        }
     }
 
     /**
@@ -25,7 +40,7 @@ class BateauxController extends Controller
      */
     public function create()
     {
-        return view('creation.bateaux');
+        return view('bateau.creation');
     }
 
     /**
@@ -47,7 +62,9 @@ class BateauxController extends Controller
      */
     public function show($id)
     {
-
+        $bateau = DB::table('bateaux')->where('id',$id);
+        return view('bateau.affichage')
+            ->with('bateaux', $bateau);
     }
 
     /**

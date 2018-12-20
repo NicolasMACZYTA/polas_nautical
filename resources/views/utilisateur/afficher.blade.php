@@ -1,13 +1,13 @@
 <?php
     echo "<div style=\"margin-right:20px\">Bienvenue, ".$_SESSION['Utilisateur']['nom']." ".$_SESSION['Utilisateur']['prenom'];
     if($_SESSION['Utilisateur']['id_droit']==3){
-        echo " (Administrateur) ";
+        echo " (<strong>Administrateur</strong>) ";
     }
     elseif($_SESSION['Utilisateur']['id_droit']==2){
-        echo " (Gestionnaire) ";
+        echo " (<strong>Gestionnaire</strong>) ";
     }
     else{
-        echo " (Utilisateur) ";
+        echo " (<strong>Propriétaire</strong>) ";
     }
     echo "</h6></div>"
 ?>

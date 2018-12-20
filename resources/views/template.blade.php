@@ -37,8 +37,9 @@
             @endempty
         </nav>
     </div>
-        @yield('navcontent')
+
     <div id="contenu" style="margin: 15px">
+        @yield('nav')
         @yield('contenu')
     </div>
 
