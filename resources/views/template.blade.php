@@ -14,7 +14,7 @@
     <div id="head">
             
         <div id="bandeau" style="background-color:#6fadff;height:100px;width:100%">
-            <img src="../resources/images/logo.png" style="height:100px">
+            <img src="http://image.noelshack.com/fichiers/2018/51/4/1545314796-logo.png" style="height:100px">
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
