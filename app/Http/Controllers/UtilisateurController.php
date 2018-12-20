@@ -58,7 +58,7 @@ class UtilisateurController extends Controller
             $request->input()
         );
         flash('Nouveau utilisateur enregistré')->success();
-        return redirect()->route('utilisateur.show',['utilisateur'=>$utilisateur]);
+        return redirect('/');
     }
 
     /**

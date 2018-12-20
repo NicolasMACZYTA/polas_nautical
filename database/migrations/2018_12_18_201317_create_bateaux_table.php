@@ -20,7 +20,6 @@ class CreateBateauxTable extends Migration
             $table->string('modele');
             $table->decimal('longueur' ,4 ,2);
             $table->decimal('largeur' ,4 ,2);
-            $table->date('date_construction');
         });
         Schema::table('bateaux', function(Blueprint $table){
             $table->integer('id_proprietaire')->unsigned();

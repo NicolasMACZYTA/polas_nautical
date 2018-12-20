@@ -2,7 +2,7 @@
 
 @section('navcontent')
     <li class="nav-item">
-        <a class="nav-link" href="#">Ajouter un bateau</a>
+        <a class="nav-link" href="/bateau/creer">Ajouter un bateau</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">Demandes</a>

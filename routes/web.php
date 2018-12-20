@@ -36,6 +36,8 @@ Route::get('/utilisateur/creer', 'UtilisateurController@create');
 
 Route::get('/utilisateur/panneau', 'UtilisateurController@show');
 
+Route::get('/bateau/creer', 'BateauxController@create');
+
 ROUTE::resource('bateaux','BateauxController');
 
 ROUTE::resource('utilisateur','UtilisateurController');

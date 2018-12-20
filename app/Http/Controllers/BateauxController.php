@@ -51,7 +51,10 @@ class BateauxController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $bateau = Bateaux::create(
+            $request->input()
+        );
+        return redirect('/utilisateur/panneau');
     }
 
     /**
