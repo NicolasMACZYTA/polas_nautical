@@ -1,4 +1,4 @@
-<div style="float:right">
+<div style="float:right" class="custom-control-inline">
     <form method="GET" class="form-inline" action="http://localhost/utilisateur/connexion" accept-charset="UTF-8">
         <div class ="form-group" style="margin-left:15px">
             {{Form::label ('login','Nom d\'utilisateur : ',
@@ -18,5 +18,8 @@
         <div class ="form-group" style="margin-left:15px">
             {{ Form::submit('Connexion',['class'=>'btn btn-primary'])}}
         </div >
+    </form>
+    <form action="/utilisateur/creer" method="get" style="margin-left: 15px">
+        <input type="submit" class="btn" value="Inscription">
     </form>
 </div>

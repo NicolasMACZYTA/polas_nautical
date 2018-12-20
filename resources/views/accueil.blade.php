@@ -6,7 +6,6 @@
         <div class="card-header">
             LESSS BATTEAUUUUUXXXXX
             <?php
-                echo $_SESSION['Test'];
 
             ?>
         </div>

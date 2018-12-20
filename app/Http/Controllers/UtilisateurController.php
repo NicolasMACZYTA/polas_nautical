@@ -44,7 +44,7 @@ class UtilisateurController extends Controller
 
         if ( !$utilisateur == null)
         {
-            $_SESSION['Utilisateur'] = $utilisateur;
+            $_SESSION['Utilisateur'] = $utilisateur->toArray();
             return redirect('/');
         }
         else{

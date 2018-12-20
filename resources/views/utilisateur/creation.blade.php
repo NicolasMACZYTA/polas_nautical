@@ -4,7 +4,7 @@
 
     <div class="card">
         <div class="card-header bg-primary">
-            <h2>Nouveau utilisateur :</h2>
+            <h2>Créer un nouvelle utilisateur :</h2>
         </div>
         <div class="card-body">
             {{Form::open(['route'=>'utilisateur.store'],['class'=>'form']) }}
