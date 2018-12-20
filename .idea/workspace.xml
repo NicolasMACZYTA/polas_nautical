@@ -27,12 +27,12 @@
           <entry key="env" value="1" />
           <entry key="htaccess" value="1" />
           <entry key="js" value="2" />
-          <entry key="php" value="105" />
+          <entry key="php" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="24" />
+          <entry key="Blade" value="25" />
           <entry key="CSS" value="2" />
           <entry key="JavaScript" value="2" />
           <entry key="PHP" value="81" />
@@ -44,12 +44,12 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="env" value="36" />
-          <entry key="php" value="8472" />
+          <entry key="php" value="8759" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="4093" />
+          <entry key="Blade" value="4380" />
           <entry key="HTML" value="4" />
           <entry key="PHP" value="4375" />
           <entry key="PLAIN_TEXT" value="41" />
@@ -124,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UtilisateurController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
@@ -137,10 +137,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/panneau_utilisateur.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/proprietaire/panneau.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/erreur.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -155,18 +164,6 @@
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BateauxController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,6 +213,7 @@
         <option value="$PROJECT_DIR$/resources/views/template.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UtilisateurController.php" />
+        <option value="$PROJECT_DIR$/resources/views/utilisateur/erreur.blade.php" />
       </list>
     </option>
   </component>
@@ -416,6 +414,30 @@
             <path>
               <item name="polas_nautical" type="b2602c69:ProjectViewProjectNode" />
               <item name="polas_nautical" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+              <item name="administrateur" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="polas_nautical" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polas_nautical" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+              <item name="gestionnaire" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="polas_nautical" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polas_nautical" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+              <item name="proprietaire" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="polas_nautical" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polas_nautical" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -432,10 +454,15 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\polas_nautical\resources\views\utilisateur" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\polas_nautical\resources\views\utilisateur\gestionnaire" />
+      <recent name="C:\xampp\htdocs\polas_nautical\resources\views\utilisateur\administrateur" />
+      <recent name="C:\xampp\htdocs\polas_nautical\resources\views\utilisateur\proprietaire" />
       <recent name="C:\xampp\htdocs\polas_nautical\resources\views\utilisateur" />
       <recent name="C:\xampp\htdocs\polas_nautical\public\js" />
-      <recent name="C:\xampp\htdocs\polas_nautical\public\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,12 +488,12 @@
       <option name="presentableId" value="Default" />
       <updated>1544630942444</updated>
       <workItem from="1544630949447" duration="3895000" />
-      <workItem from="1545070221618" duration="66370000" />
+      <workItem from="1545070221618" duration="66984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70265000" />
+    <option name="totallyTimeSpent" value="70879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -521,13 +548,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_18_161311_boats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="67" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_18_173031_create_boats_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -654,7 +674,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/adminPorts.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/gestionnaire.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/gestionnaire/panneau.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Emplacement.php">
@@ -733,7 +753,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/administrateur/panneau.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Bateaux.php">
@@ -777,13 +797,6 @@
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/panneau_utilisateur.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -840,6 +853,20 @@
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/proprietaire/panneau.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/utilisateur/erreur.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
