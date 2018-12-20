@@ -67,9 +67,24 @@ class UtilisateurController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        return view('utilisateur.panneau_utilisateur');
+        if(isset($_SESSION['Utilisateur'])){
+            $id = $_SESSION['Utilisateur']['id'];
+            if($id==3){
+                return view('utilisateur.administrateur.panneau');
+            }
+            elseif ($id==3){
+                return view('utilisateur.gestionnaire.panneau');
+            }
+            else{
+                return view('utilisateur.proprietaire.panneau');
+            }
+        }
+        else{
+            return view('utilisateur.erreur');
+        }
+
     }
 
     /**

@@ -3,8 +3,8 @@
 @section('contenu')
 
     <div class="card">
-        <div class="card-header bg-primary">
-            <h2>Créer un nouvelle utilisateur :</h2>
+        <div class="card-header">
+            <h2>Créer un utilisateur :</h2>
         </div>
         <div class="card-body">
             {{Form::open(['route'=>'utilisateur.store'],['class'=>'form']) }}
@@ -14,6 +14,7 @@
                     }}
                     {{ Form::text('login',null,
                     ['class'=>'form-control input-lg',
+                    'style'=>'width:300px',
                     'placeholder'=>'Nom d\'utilisateur'])
                     }}
                 </div >
@@ -21,7 +22,7 @@
                     {{ Form::label('nom','Mot de passe : ',
                     ['class'=>'control-label'])
                     }}
-                    <input type="password" class="form-control input-lg" name="mot_de_passe" id="mot_de_passe">
+                    <input type="password" class="form-control" style="width:300px" input-lg" name="mot_de_passe" id="mot_de_passe">
                 </div >
                 <div class ="form-group">
                     {{ Form::label ('nom','Nom : ',
@@ -29,6 +30,7 @@
                     }}
                     {{ Form::text('nom',null,
                     ['class'=>'form-control input-lg',
+                    'style'=>'width:300px',
                     'placeholder'=>'Nom'])
                     }}
                 </div >
@@ -38,6 +40,7 @@
                     }}
                     {{ Form::text('prenom',null,
                     ['class'=>'form-control input-lg',
+                    'style'=>'width:300px',
                     'placeholder'=>'Prenom'])
                     }}
                 </div >
