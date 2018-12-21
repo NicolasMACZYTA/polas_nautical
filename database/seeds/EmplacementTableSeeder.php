@@ -13,7 +13,7 @@ class EmplacementTableSeeder extends Seeder
     {
         $faker =\Faker\Factory::create();
         foreach (range(1,30) as $index) {
-            DB::table('utilisateur')->insert([
+            DB::table('emplacement')->insert([
                 'longueur_max'=> $faker->randomFloat(2 ,0 ,15) ,
                 'largeur_max' => $faker->randomFloat(2 ,0 ,5) ,
                 'id_gestionnaire'=> 2 ,
