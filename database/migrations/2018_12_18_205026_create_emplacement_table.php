@@ -15,7 +15,6 @@ class CreateEmplacementTable extends Migration
     {
         Schema::create('emplacement', function (Blueprint $table) {
             $table -> increments('id');
-            $table->integer('gestionnaire_id');
             $table -> timestamps();
             $table -> decimal('longeur_max');
             $table -> decimal('largeur_max');
