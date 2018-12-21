@@ -9,10 +9,15 @@
 
     <div class="card">
         <div class="card-header">
-            <h2>Créer un utilisateur :</h2>
+            <h2>Modifier un bateau :</h2>
         </div>
         <div class="card-body">
-            {{Form::open(['route'=>'bateaux.store'],['class'=>'form']) }}
+            {!! Form::model($bateau ,
+            [
+            'method'=>'put',
+            'route'=>[ 'bateaux.update', $bateau->id],
+            'class'=>'form'
+            ]) !!}
             <div class ="form-group">
                 {{Form::label ('nom','Nom : ',
                 ['class'=>'control-label'])
@@ -38,7 +43,7 @@
                 ['class'=>'control-label'])
                 }}
                 <div class="input-group mb-3" style="width: 150px">
-                    <input name="longueur" type="number" class="form-control" placeholder="Longueur" aria-describedby="basic-addon2">
+                    <input name="longueur" type="number" class="form-control" placeholder="Longueur" aria-describedby="basic-addon2" value="{{$bateau->longueur}}">
                     <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2"> m </span>
                     </div>
@@ -49,7 +54,7 @@
                 ['class'=>'control-label'])
                 }}
                 <div class="input-group mb-3" style="width: 150px">
-                    <input name="largeur" type="number" class="form-control" placeholder="Largeur" aria-describedby="basic-addon2">
+                    <input name="largeur" type="number" class="form-control" placeholder="Largeur" aria-describedby="basic-addon2" value="{{$bateau->largeur}}">
                     <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2"> m </span>
                     </div>

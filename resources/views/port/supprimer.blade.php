@@ -13,9 +13,7 @@
         <strong>Vous êtes sur le point de supprimer le port suivant :</strong><br>
         - Port de {{ $port['nom'] }} à {{ $port['ville'] }}
         <div style="margin:15px" class="form-inline">
-            <form class="form" method="post" action="/utilisateur/destroy/{{$port['id']}}">
-            <input type="Submit" value="Confirmer" class="btn btn-danger">
-            {{Form::close()}}
+            <a href="/port/destroy/{{$port['id']}}"><button class="btn btn-danger">Confirmer</button></a>
             <a href="/utilisateur/panneau" style="margin-left:10px" class="btn btn-light">Annuler</a>
         </div>
 

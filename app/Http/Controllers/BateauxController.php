@@ -78,7 +78,8 @@ class BateauxController extends Controller
      */
     public function edit($id)
     {
-        //
+        $bateau = DB::table('bateaux')->where('id',$id)->get();
+        return view ('bateau.modifier')-> with('bateau',$bateau[0] );
     }
 
     /**
@@ -88,9 +89,14 @@ class BateauxController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request ,Bateaux $bateau)
     {
-        //
+        print_r($bateau);
+        $bateau->update(
+            $request->input()
+        );
+
+        //return redirect ('/utilisateur/panneau');
     }
 
     /**
@@ -99,9 +105,19 @@ class BateauxController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    public function supprimer($id){
+        $bateau = db::table('bateaux')->where('id',$id)->get();
+        $bateau = json_decode(json_encode($bateau[0]), true);
+        echo view('bateau.supprimer', [
+
+            'bateau' => $bateau
+        ]);
+    }
+
     public function destroy($id)
     {
-        $id->delete ();
-        redirect("/utilisateur/panneau");
+        DB::table('bateaux')->where('id',$id)->delete();
+        return redirect('/utilisateur/panneau');
     }
 }
