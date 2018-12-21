@@ -44,17 +44,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="5" />
+          <entry key="dummy" value="8" />
           <entry key="env" value="36" />
-          <entry key="php" value="15255" />
+          <entry key="php" value="15258" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="8308" />
           <entry key="HTML" value="18" />
-          <entry key="PHP" value="6929" />
-          <entry key="PLAIN_TEXT" value="41" />
+          <entry key="PHP" value="6932" />
+          <entry key="PLAIN_TEXT" value="44" />
         </counts>
       </usages-collector>
     </session>
@@ -91,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/PortTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -151,11 +151,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_18_195026_create_emplacement_table.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_18_205026_create_emplacement_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+            <state relative-caret-position="408">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -173,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_18_171427_bateaux.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_18_171548_emplacement.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_18_182808_bateaux.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_18_193000_create_proprietaire_table.php" />
@@ -221,9 +220,10 @@
         <option value="$PROJECT_DIR$/resources/views/port/affichage.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/UtilisateurTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_18_195026_create_emplacement_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/EmplacementTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/PortTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_18_195026_create_emplacement_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_18_205026_create_emplacement_table.php" />
       </list>
     </option>
   </component>
@@ -511,12 +511,12 @@
       <option name="presentableId" value="Default" />
       <updated>1544630942444</updated>
       <workItem from="1544630949447" duration="3895000" />
-      <workItem from="1545070221618" duration="125427000" />
+      <workItem from="1545070221618" duration="125707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129322000" />
+    <option name="totallyTimeSpent" value="129602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -886,13 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_18_195026_create_emplacement_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/BateauxTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -911,6 +904,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_18_205026_create_emplacement_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
