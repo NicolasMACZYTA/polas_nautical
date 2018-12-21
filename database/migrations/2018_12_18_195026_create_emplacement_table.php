@@ -25,6 +25,8 @@ class CreateEmplacementTable extends Migration
             $table->foreign('id_gestionnaire')->references('id')->on('utilisateur');
             $table -> integer('id_port')->unsigned();
             $table->foreign('id_port')->references('id')->on('port');
+            $table -> integer('id_bateau')->unsigned();
+            $table->foreign('id_bateau')->references('id')->on('bateau');
         });
     }
 

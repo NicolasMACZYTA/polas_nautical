@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PortTableSeeder::class);
         $this->call(DroitTableSeeder::class);
         $this->call(UtilisateurTableSeeder::class);
+        $this->call(EmplacementTableSeeder::class);
         $this->call(BateauxTableSeeder::class);
 
     }

@@ -12,7 +12,7 @@ class PortTableSeeder extends Seeder
     public function run()
     {
         $faker =\Faker\Factory::create();
-        foreach (range(1,30) as $index) {
+        foreach (range(1,10) as $index) {
             DB::table('port')->insert([
                 'nom' => $faker->company,
                 'ville' => $faker->city

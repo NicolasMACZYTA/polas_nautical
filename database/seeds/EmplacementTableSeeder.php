@@ -17,7 +17,8 @@ class EmplacementTableSeeder extends Seeder
                 'longueur'=> $faker->randomFloat(2 ,0 ,15) ,
                 'largeur' => $faker->randomFloat(2 ,0 ,5) ,
                 'id_gestionnaire'=> 2 ,
-                'id_port' => $faker->randomFloat(2 ,0 ,5) ,
+                'id_port' => $faker->randomFloat(0 ,0 ,10) ,
+                'id_bateau' => $faker->randomFloat(2 ,0 ,10) ,
             ]);
         }
     }
