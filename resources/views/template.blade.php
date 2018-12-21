@@ -13,7 +13,7 @@
 <body>
     <div id="head">
             
-        <div id="bandeau" style="background-color:#6fadff;height:100px;width:100%">
+        <div id="bandeau" class="bg-primary">
             <img src="http://image.noelshack.com/fichiers/2018/51/4/1545314796-logo.png" style="height:100px">
         </div>
 
