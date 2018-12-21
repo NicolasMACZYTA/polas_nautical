@@ -8,10 +8,7 @@
         <a class="nav-link" href="#">Demandes</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Demandes</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Demandes</a>
+        <a class="nav-link" href="#">Utilisateurs</a>
     </li>
 @endsection
 

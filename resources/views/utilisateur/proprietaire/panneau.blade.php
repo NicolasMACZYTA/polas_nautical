@@ -7,7 +7,6 @@
     <li class="nav-item">
         <a class="nav-link" href="#">Faire une demande</a>
     </li>
-
 @endsection
 
 @section('titre')

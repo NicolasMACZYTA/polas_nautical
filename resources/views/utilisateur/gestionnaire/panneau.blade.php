@@ -7,12 +7,6 @@
     <li class="nav-item">
         <a class="nav-link" href="#">Demandes</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Demandes</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Demandes</a>
-    </li>
 @endsection
 
 @section('titre')
