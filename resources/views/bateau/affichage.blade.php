@@ -10,7 +10,7 @@
         </div>
         <div style="float:right">
             <a href="#"><button class="btn btn-primary">Modifier</button></a>
-            <a href="#"><button class="btn btn-danger">Supprimer</button></a>
+            <a href="/"><button class="btn btn-danger">Supprimer</button></a>
         </div>
     </div>
     <div class="card-body bg-warning">

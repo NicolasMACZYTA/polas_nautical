@@ -70,11 +70,11 @@ class UtilisateurController extends Controller
     public function show()
     {
         if(isset($_SESSION['Utilisateur'])){
-            $id = $_SESSION['Utilisateur']['id'];
+            $id = $_SESSION['Utilisateur']['id_droit'];
             if($id==3){
                 return view('utilisateur.administrateur.panneau');
             }
-            elseif ($id==3){
+            elseif ($id==2){
                 return view('utilisateur.gestionnaire.panneau');
             }
             else{

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class EmplacementController extends Controller
 {
@@ -12,9 +13,21 @@ class EmplacementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public static function index()
     {
-        //
+        $resultat = DB::table('emplacement')->where('id_gestionnaire',$_SESSION['Utilisateur']['id'])->get();
+        $resultat = $resultat->toArray();
+        if(empty($resultat)){
+            echo "<div class=\"alert alert-danger\" role=\"alert\">
+                <strong>Vous ne gérer aucun emplacement !</strong><br>
+            </div>";
+        }
+        foreach($resultat as $i){
+            $emplacement = json_decode(json_encode($i), true);
+            echo view('emplacement.affichage', [
+                'emplacement' => $emplacement
+            ]);
+        }
     }
 
     /**

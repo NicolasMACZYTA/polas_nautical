@@ -14,19 +14,10 @@
 Route::get('/', function () {
     return view('accueil');
 });
-Route::get('/admin', function() {
-    return view('admin');
-});
-Route::get('/adminPlaces',function(){
-    return view('adminPlaces');
-});
 
-Route::get('/proprietaire', function() {
-    return view('proprietaire');
-});
-Route::get('/gestionnaire', function() {
-    return view('gestionnaire');
-});
+Route::get('/port/supprimer/{id}', ['as' => 'id','uses' =>'PortController@supprimer']);
+
+Route::get('/port/destroy/{id}', ['as' => 'id','uses' =>'PortController@destroy']);
 
 Route::get('/utilisateur/deconnexion', 'UtilisateurController@deconnexion');
 
@@ -37,6 +28,10 @@ Route::get('/utilisateur/creer', 'UtilisateurController@create');
 Route::get('/utilisateur/panneau', 'UtilisateurController@show');
 
 Route::get('/bateau/creer', 'BateauxController@create');
+
+Route::get('/bateau/supprimer', 'BateauxController@destroy');
+
+Route::get('/port/creer', 'PortController@create');
 
 ROUTE::resource('bateaux','BateauxController');
 

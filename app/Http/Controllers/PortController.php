@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
+use App\Port;
 
 class PortController extends Controller
 {
@@ -12,9 +14,21 @@ class PortController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public static function index()
     {
-        //
+        $resultat = DB::table('port')->get();
+        $resultat = $resultat->toArray();
+        if(empty($resultat)){
+            echo "<div class=\"alert alert-danger\" role=\"alert\">
+                <strong>Aucun port dans la base !</strong><br>
+            </div>";
+        }
+        foreach($resultat as $i){
+            $port = json_decode(json_encode($i), true);
+            echo view('port.affichage', [
+                'port' => $port
+            ]);
+        }
     }
 
     /**
@@ -24,7 +38,7 @@ class PortController extends Controller
      */
     public function create()
     {
-        //
+        return view('port.creation');
     }
 
     /**
@@ -33,9 +47,21 @@ class PortController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    public function supprimer($id){
+        $port = db::table('port')->where('id',$id)->get();
+        $port = json_decode(json_encode($port[0]), true);
+        echo view('port.supprimer', [
+
+            'port' => $port
+        ]);
+    }
+
     public function store(Request $request)
     {
-        //
+        $port = Port::create(
+            $request->input()
+        );
+        return redirect('/utilisateur/panneau');
     }
 
     /**
@@ -80,6 +106,7 @@ class PortController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('port')->where('id',$id)->delete();
+        return redirect('/utilisateur/panneau');
     }
 }

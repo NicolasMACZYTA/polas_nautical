@@ -101,6 +101,7 @@ class BateauxController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $id->delete ();
+        redirect("/utilisateur/panneau");
     }
 }
