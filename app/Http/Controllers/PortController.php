@@ -83,7 +83,8 @@ class PortController extends Controller
      */
     public function edit($id)
     {
-        //
+        $port = DB::table('port')->where('id',$id)->get();
+        return view ('port.modifier')-> with('port',$port[0] );
     }
 
     /**
@@ -93,9 +94,13 @@ class PortController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Port $port)
     {
-        //
+        $port->update(
+            $request->input()
+        );
+
+        return redirect ('/utilisateur/panneau');
     }
 
     /**

@@ -91,12 +91,12 @@ class BateauxController extends Controller
      */
     public function update(Request $request ,Bateaux $bateau)
     {
-        print_r($bateau);
+
         $bateau->update(
             $request->input()
         );
 
-        //return redirect ('/utilisateur/panneau');
+        return redirect ('/utilisateur/panneau');
     }
 
     /**
