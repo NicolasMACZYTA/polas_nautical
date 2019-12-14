@@ -13,6 +13,7 @@ class Bateaux extends Model
         'modele',
         'longueur',
         'largeur',
-        'id_proprietaire'
+        'id_proprietaire',
+        'ip_port'
     ];
 }

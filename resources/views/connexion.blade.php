@@ -4,7 +4,7 @@
     <h1 class="display-4">Bienvenue</h1>
      <div class="card-group">
         <div class="card">
-            <div class="card-header bg-primary">
+            <div class="card-header bg-info">
                 <strong>Propriétaire</strong>
             
             </div>
@@ -13,7 +13,7 @@
                 </div>
             </div>
         <div class="card">
-        <div class="card-header bg-primary">
+        <div class="card-header bg-info">
             <strong>Gestionnaire</strong>
             
             </div>
@@ -22,7 +22,7 @@
                 </div>
             </div>
         <div class="card">
-        <div class="card-header bg-primary">
+        <div class="card-header bg-info">
             <strong>Administrateur</strong>
             
             </div>

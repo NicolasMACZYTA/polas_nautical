@@ -5,7 +5,7 @@
         <a class="nav-link" href="/port/creer">Ajouter un port</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Demandes</a>
+        <a class="nav-link" href="#">Declaration entretien</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">Utilisateurs</a>

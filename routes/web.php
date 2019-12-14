@@ -43,7 +43,7 @@ ROUTE::resource('bateaux','BateauxController');
 
 ROUTE::resource('utilisateur','UtilisateurController');
 
-ROUTE::resource('emplacement','EmplacementController');
+ROUTE::resource('entretien','EntretienController');
 
 ROUTE::resource('port','PortController');
 

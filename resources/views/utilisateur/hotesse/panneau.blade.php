@@ -15,5 +15,5 @@
 @endsection
 
 @section('panneau_contenu')
-    {!!  \App\Http\Controllers\BateauxController::indexAll()!!}
+    {!!  \App\Http\Controllers\BateauxController::index()!!}
 @endsection

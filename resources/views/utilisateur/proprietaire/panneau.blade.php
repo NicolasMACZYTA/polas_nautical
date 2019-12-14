@@ -5,7 +5,7 @@
         <a class="nav-link" href="/bateau/creer">Ajouter un bateau</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Faire une demande</a>
+        <a class="nav-link" href="#">Faire une declaration d_entretien</a>
     </li>
 @endsection
 

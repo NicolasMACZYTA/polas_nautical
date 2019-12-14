@@ -59,6 +59,7 @@
                 {{ Form::submit('Valider',['class'=>'btn btn-primary'])}}
             </div >
             <input type="hidden" name="id_proprietaire" value="<?php echo $_SESSION['Utilisateur']['id'];?>">
+            <input type="hidden" name="id_port" value="1">
             {{ Form::close() }}
         </div>
     </div>

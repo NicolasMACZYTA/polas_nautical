@@ -75,7 +75,7 @@ class UtilisateurController extends Controller
                 return view('utilisateur.administrateur.panneau');
             }
             elseif ($id==2){
-                return view('utilisateur.gestionnaire.panneau');
+                return view('utilisateur.hotesse.panneau');
             }
             else{
                 return view('utilisateur.proprietaire.panneau');

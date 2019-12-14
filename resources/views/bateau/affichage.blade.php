@@ -13,8 +13,8 @@
             <a href="/bateau/supprimer/{{$bateau['id']}}"><button class="btn btn-danger">Supprimer</button></a>
         </div>
     </div>
-    <div class="card-body bg-warning">
-        Actuellement dans aucun port.
+    <div class="card-body bg-info">
+        Pas d'entretien prévu.
     </div>
 </div>
 
