@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DroitTableSeeder::class);
         $this->call(UtilisateurTableSeeder::class);
         $this->call(BateauxTableSeeder::class);
-        $this->call(EmplacementTableSeeder::class);
+       
 
     }
 }
