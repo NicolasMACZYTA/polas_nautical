@@ -24,6 +24,8 @@ class CreateBateauxTable extends Migration
         Schema::table('bateaux', function(Blueprint $table){
             $table->integer('id_proprietaire')->unsigned();
             $table->foreign('id_proprietaire')->references('id')->on('utilisateur');
+            $table->integer('id_port')->unsigned();
+            $table->foreign('id_port')->references('id')->on('port');
         });
     }
 

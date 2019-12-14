@@ -4,12 +4,12 @@
 
     <div class="card">
         <div class="card-header">
-            <h2>nouvelle demande de reservaion</h2>
+            <h2>déclaration nouvel entretien</h2>
         </div>
         <div class="card-body">
-            {{Form::open(['route'=>'reservation.store'],['class'=>'form']) }}
+            {{Form::open(['route'=>'entretien.store'],['class'=>'form']) }}
                 <div class ="form-group">
-                    {{Form::label ('login','date de début : ',
+                    {{Form::label ('login','date de l\'entretien : ',
                     ['class'=>'control-label'])
                     }}
                     {{ Form::text('login',null,
@@ -19,7 +19,7 @@
                     }}
                 </div >
                 <div class ="form-group">
-                    {{ Form::label('nom','date de fin : ',
+                    {{ Form::label('nom','date prochain entretien : ',
                     ['class'=>'control-label'])
                     }}
                     <input class="form-control" style="width:300px" input-lg name="mot_de_passe" id="mot_de_passe" placeholder="JJ/MM/AAAA">

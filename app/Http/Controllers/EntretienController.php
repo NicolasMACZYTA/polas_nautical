@@ -1,33 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace bateaux_v3\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
+use bateaux_v3\Http\Controllers\Controller;
 
-class EmplacementController extends Controller
+class EntretienController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public static function index()
+    public function index()
     {
-        $resultat = DB::table('emplacement')->where('id_gestionnaire',$_SESSION['Utilisateur']['id'])->get();
-        $resultat = $resultat->toArray();
-        if(empty($resultat)){
-            echo "<div class=\"alert alert-danger\" role=\"alert\">
-                <strong>Vous ne gérer aucun emplacement !</strong><br>
-            </div>";
-        }
-        foreach($resultat as $i){
-            $emplacement = json_decode(json_encode($i), true);
-            echo view('emplacement.affichage', [
-                'emplacement' => $emplacement
-            ]);
-        }
+        return('entretien.liste');
     }
 
     /**
@@ -37,7 +24,7 @@ class EmplacementController extends Controller
      */
     public function create()
     {
-        //
+        return view('entretien.create');
     }
 
     /**
@@ -48,7 +35,11 @@ class EmplacementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $Entretien = Entretien::create(
+            $request->input()
+        );
+        flash('Nouvel entretien enregistré')->success();
+        return redirect('/utilisateur/panneau');
     }
 
     /**
@@ -59,7 +50,9 @@ class EmplacementController extends Controller
      */
     public function show($id)
     {
-        //
+        $entretien = DB::table('entretien')->where('id',$id);
+        return view('entretien.affichage')
+                ->with('entretien',$entretien);
     }
 
     /**
@@ -70,7 +63,8 @@ class EmplacementController extends Controller
      */
     public function edit($id)
     {
-        //
+        $bateau = DB::table('entretien')->where('id',$id)->get();
+        return view('entretien.modifier')->with('bateau',$entretien[0]);
     }
 
     /**
@@ -82,7 +76,11 @@ class EmplacementController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $entretien->update(
+            $request->input()
+        );
+
+        return redirect('utilisateur/panneau');
     }
 
     /**
@@ -93,6 +91,7 @@ class EmplacementController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('entretien')->where('id',$id)->delete();
+        return redirect('/utilisateur/panneau');
     }
 }
